@@ -1,0 +1,487 @@
+.main{
+    display: flex;
+    position: relative;
+}
+
+.calendarPersonal{
+    position: absolute;
+    top: 95px;
+    right: 50px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px #00000029;
+    
+}
+
+.react-calendar{
+    border: 0px !important;
+    /* width: 250px;
+    height: 170px; */
+}
+
+
+.chart{
+    z-index: 0;
+    width: 1500px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    /* background-color: green; */
+}
+
+.chart__body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: -70px;
+}
+
+.chart__Y{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    height: 690px;
+    width: 1px;
+    background-color: rgb(183, 182, 182)
+}
+
+.chart__X{
+    position: absolute;
+    bottom: 150px;
+    left: 140px;
+    width: 1110px;
+    height: 1px;
+    background-color: rgb(183, 182, 182)
+}
+
+.chart__title{
+    /* font-family: "Video-Regular"; */
+    font-family: "Montserrat-Regular";
+    /* font-family: "Montserrat-SemiBold"; */
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    color: #4c4c4c;
+}
+
+.skud__title{
+    left: 120px;
+}
+.water__title{
+    top: -130px;
+    left: -90px;
+}
+
+.XY__body{
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+    width: 1090px;
+    height: 680px;
+    opacity: 0.3;
+}
+
+.limit{
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    position: absolute;
+    top: 300px;
+    left: -15px;
+    display: flex;
+
+}
+.limit__line{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+}
+.limit__line_punctir{
+    margin-top: 10px;
+    border-top: 1px dashed rgb(138, 138, 138); 
+    width: 1070px;
+    height: 2px;
+    background-color: white;
+}
+
+
+.XY__body_wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: flex-start;
+    /* padding-left: 10px; */
+}
+
+.capacity{
+    /* transition: all 0.5s; */
+    width: 100px;
+    height: 100%;
+    margin-left: 20px;
+    position: relative;
+    /* background-color: red;
+    opacity: 0.4; */
+    z-index: 0;
+}
+
+.filling{
+    /* transition: all 2s; */
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: purple;
+    opacity: 0.7;
+    z-index: 2;
+}
+.time{
+    font-family: "Montserrat-Regular";
+    font-size: 12px;
+    color: black;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.NewFilling{
+    transition: all 2s;
+    transform: translateX(-120px);
+}
+
+
+._1{
+    height: 180px;
+}
+._2{
+    height: 200px;
+}
+
+._4{
+    height: 300px;
+}
+
+._5{
+    height: 400px;
+}
+
+._6{
+    height: 500px;
+}
+
+._7{
+    height: 600px;
+}
+
+._8{
+    height: 460px;
+}
+
+
+
+
+.clock{
+    /* font-family: "SourceSerif4-Regular"; */
+    font-family: "Calibri";
+    font-size: 25px;
+    position: absolute;
+    top: 23px; right: 50px;
+}
+
+.Navbar__body{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    width: 75px;
+    height: 100vh;
+    background-color: #fff;
+    /* background-color: rgb(245, 245, 245); */
+    border-right: 1px solid rgb(243, 243, 243);
+    box-shadow: 0px 0px 24px #00000029;
+    padding-top: 10px;
+}
+
+.logo{
+    margin: auto;
+    width: 48.7px;
+    height: 55px;
+    background-image: url('../img/mirea.png');
+    background-size: 100% 100%;
+}
+
+.dop{
+    margin: auto;
+    margin-top: 350px;
+    width: 30px;
+    height: 30px;
+}
+
+.component{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    /* background-color: green; */
+    cursor: pointer;
+}
+
+.dot{
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 3.5px;
+    background-color: grey;
+    animation-name: zib;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.skud__body{
+    margin: 100px 0px ;
+    width:1200px;
+    height:700px;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 600px 600px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.camera{
+    background-color:#333;
+    padding:20px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-family:sans-serif;
+    position: relative;
+    overflow: hidden;
+    /* border: 2px rgb(132, 233, 132) solid; */
+  }
+  .camera:hover{
+    border: 2px rgb(244, 100, 100) solid;
+  }
+  .mask{
+    position: absolute;
+    top: -10px; left: 0;
+    width: 610px;
+    height: 350px;
+    z-index: 200;
+    background-color: grey;
+    opacity: 0.4;
+  }
+  .player{
+    position: absolute;
+    top: -10px; left: 0;
+    width: 610px;
+    height: 350px;
+    z-index: 2;
+  }
+
+  .buttonPersonal{
+    font-family: "Montserrat-Regular";
+    font-weight: 500;
+    /* color: #4c4c4c; */
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    width: 255px;
+    height: 50px;
+    /* background-color: rgb(245, 245, 245); */
+    /* background-color: orange; */
+    box-shadow: 0px 0px 12px #00000029;
+    /* border: 2px rgb(171, 171, 171) solid; */
+    /* border-radius: 5px; */
+    padding-top: 13px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .phone__icon{
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .buttonPersonal:active{
+    box-shadow: 0px 0px 0px #00000029;
+  }
+
+  .buttonCalling1{
+    top: 500px;
+    right: 95px;
+    background-color: rgba(0, 0, 128, 0.8);
+  }
+  .buttonCalling2{
+    top: 670px;
+    right: 95px;
+    background-color: orange;
+  }
+  .buttonReaction{
+    
+    top: 585px;
+    right: 95px;
+    background-color: green;
+
+  }
+
+@keyframes zib {
+    0%{
+        width: 7px;
+        height: 7px;
+        border-radius: 3.5px;
+        opacity: 100%;
+    }
+    100%{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        opacity: 0%;
+    }
+}
+
+.fire{
+    margin-top: 250px;
+}
+
+.water{
+    margin-top: 50px;
+}
+
+.skud{
+    margin-top: 50px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.developers {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-80%);
+    text-align: center;
+    font-family: "Montserrat-Light";
+    font-size: 8px;
+    display: flex;
+}
+
+.department {
+    font-family: "SourceSerif4-Regular";
+    font-size: 22px;
+    margin-left: 5px;
+    /* margin-top: -12px; */
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src:url('../img/fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src:url('../img/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src:url('../img/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src:url('../img/fonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src:url('../img/fonts/Montserrat-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'SourceSerif4-Bold';
+    src:url('../img/fonts/SourceSerif4Caption-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'SourceSerif4-Regular';
+    src:url('../img/fonts/SourceSerif4Caption-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+@font-face {
+    font-family: 'Video-Regular';
+    src:url('../img/fonts/Video-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+}
+
+
+.waterBody{
+    margin-top: 150px;
+    position: relative;
+   
+}
+.waterImg{
+    width: 1200px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.point{
+    position: absolute;
+    top: 90px; left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.p1{
+    left: 315px;
+}
+.p2{
+    left:550px;
+}
+.p3{
+    top: 445px;
+    left: 385px;
+}
+.p4{
+    left: 790px;
+}
+.p5{
+    top: 445px;
+    left: 670px;
+}
